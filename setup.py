@@ -6,7 +6,7 @@ with open("README.md", mode="r", encoding="utf8") as f:
     description = f.read()
 
 
-with open("expander/__init__.py", mode="r", encoding="utf8") as f:
+with open("expand/__init__.py", mode="r", encoding="utf8") as f:
     search = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE)
 
     if search is not None:

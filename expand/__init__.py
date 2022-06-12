@@ -5,4 +5,4 @@ look at README file if you need more description.
 
 from expand.expand import *
 
-__version__ = "1.1.0"
+__version__ = "1.0.0"
