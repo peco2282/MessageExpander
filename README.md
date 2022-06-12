@@ -42,7 +42,7 @@ from discord.ext.commands import Bot
 
 INITIAL_EXTENTIONS = [
     ...,
-    "message_expander"
+    "dispand"
 ]
 
 
