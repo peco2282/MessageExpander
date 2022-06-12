@@ -13,9 +13,9 @@ with open("expander/__init__.py", mode="r", encoding="utf8") as f:
         version = search.group(1)
 
 setup(
-    name='expander',
-    version=version or "1.0.0",
-    packages=['expander'],
+    name='expand',
+    version=version,
+    packages=['expand'],
     long_description=description,
     long_description_content_type="text/markdown",
     url='https://github.com/peco2282/expander',

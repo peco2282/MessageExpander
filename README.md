@@ -21,7 +21,7 @@ $ pip install -U expander
 
 ```python
 import discord
-from expander import message_expander
+from expand import message_expander
 from discord.ext import commands
 
 bot = commands.Bot(
