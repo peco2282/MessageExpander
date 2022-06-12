@@ -23,7 +23,7 @@ setup(
     author='peco2282',
     author_email='pecop2282@gmail.com',
     description='expand discord message links',
-    requires=[
-        "py-cord>=2.0.0b1"
+    install_requires=[
+        "py-cord >= 2.0.0b1"
     ]
 )
