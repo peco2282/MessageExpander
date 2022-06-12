@@ -6,16 +6,16 @@ with open("README.md", mode="r", encoding="utf8") as f:
     description = f.read()
 
 
-with open("expand/__init__.py", mode="r", encoding="utf8") as f:
+with open("dispand/__init__.py", mode="r", encoding="utf8") as f:
     search = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE)
 
     if search is not None:
         version = search.group(1)
 
 setup(
-    name='expand',
+    name='dispand',
     version=version,
-    packages=['expand'],
+    packages=['dispand'],
     long_description=description,
     long_description_content_type="text/markdown",
     url='https://github.com/peco2282/expander',

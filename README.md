@@ -14,14 +14,14 @@
 ## Setting...
 
 ```shell
-$ pip install -U expander
+$ pip install -U dispand
 ```
 
 ## Usage...
 
 ```python
 import discord
-from expand import message_expander
+from dispand import message_expander
 from discord.ext import commands
 
 bot = commands.Bot(
