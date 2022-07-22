@@ -28,7 +28,6 @@ async def get_messages(bot: Bot, message: Message) -> List[Message]:
     result: Iterator[Match[str]] = message_pattern.finditer(message.content)
     for r in result:
         if sum(1 for _ in r.groups()) != 5:
-            print("continue")
             continue
         try:
             fetched_message: Message = await bot.get_guild(
@@ -56,7 +55,7 @@ def create_embed(message: Message) -> Embed:
 
     Returns
     -------
-        A discord.py Embed object
+        A discord Embed object
 
     """
     embed: Embed = Embed(
@@ -103,7 +102,6 @@ async def message_expander(bot: Bot, message: Message) -> None:
 
     for msg in messages:
         if msg.attachments:
-            print(msg.attachments)
             for attachment in msg.attachments:
                 await message.channel.send(
                     embed=Embed().set_image(
@@ -120,9 +118,6 @@ async def message_expander(bot: Bot, message: Message) -> None:
         if msg.content:
             embed = create_embed(message=msg)
             await message.channel.send(embed=embed)
-
-        else:
-            pass
 
 
 class Expander(Cog):
